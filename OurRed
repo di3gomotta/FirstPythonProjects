@@ -1,0 +1,118 @@
+# Presentacion
+print("Bienvenido a OurRed")
+
+
+#Solicitud nombre#
+
+nombre = input("Para comenzar, conozcámonos un poco más, dime tu nombre")
+print()
+print("Hola,",nombre,",bienvenido a OurRed.")
+print()
+
+#Solicitud edad#
+
+agno = int(input("Muy bien, ahora dime, ¿Cuál es tu año de nacimiento?"))
+edad = 2021-agno-1
+print()
+
+#Ciudad de nacimiento y lugar dnd vive
+
+nacionalidad = input("¡WOW!¡Cuánta juventud! Ahora dime, ¿En qué lugar del mundo naciste?")
+print()
+residencia = input("¡Vaya!Me encantaría conocer ese lugar. Cuéntame, ¿Dónde te encuentras viviendo?")
+print()
+#amigos
+
+amigos = int(input("Esto es importante luego, cuéntame ¿Cuántos amigos tienes?"))
+print()
+
+#hobbies
+
+hobbies= input("Créeme, falta muy poco. ¿Puedes decirme tus hobbies favoritos?")
+
+print("Fantástico, no hemos terminado, pero me tomaré un segundo para decirte que no podrás formar parte de OurRed, lo siento.")
+print()
+print("Jajaja lo siento, no me he presentado, soy bot45 pero puedes llamarme Don Comedias.")
+print()
+print("Ahora que sabes quién soy y qué tan gracioso puedo ser, continuaremos con las preguntas finales.")
+print()
+
+#Musica
+
+musica_fav = input("Qué te parece si me cuentas quién es tu cantante favorito? Si no tienes uno puedes decirme una banda.")
+print("No está mal aunque soy más clásico, ¿Conoces Für Elise de Beethoven? ¡Uff, eso sí que es música!")
+
+#invierano
+print()
+print("Espero no estés triste, pero nuestra charla ha llegado a su fin", end="  ")
+print("Pero antes de irme necesito saber algo super diper crucial", end="  ")
+print()
+
+
+estacion_fav= input("¿Eres Team Invierno o Team Verano? Cuidadito con tu respuesta...")
+
+if estacion_fav == "Team Verano" or estacion_fav == " team verano" or estacion_fav == "verano" or estacion_fav == "Verano":
+    print("Eso sí que es grandioso, ¡¡¡ahora sí podemos ser amigos!!!")
+else:
+    print("mmm... tal vez quieras reconsiderarlo.")
+
+#FIN
+
+print()
+print("Hemos llegado al final del registro, espero que te hayas divertido (al menos un poco)")
+print()
+print("Ahora te dejaré con mi compañero,aunque no es muy gracioso como yo, él terminará de crear tu perfil")
+print()
+print("Fue un gusto conocerte y, por favor, pon escucha algo de Beethoven")
+print()
+print()
+print("Ahh, una cosita más, me alegraría mucho si le cuentas a tus amigos de nosotros, serán bienvenidos al igual que tú.")
+print()
+
+print()
+print("Qué tal? Soy bot89 y finalizaré para tí el registro en OurRed.")
+print("A continuación te presentaré la tabla con los datos que aparecerán en tu perfil:")
+print("--------------------------------------------------------------------")
+print("Nombre:", nombre)
+print("Edad:", edad)
+print("Nacionalidad:", nacionalidad)
+print("Residencia:",residencia)
+print("Cantidad de amigos:", amigos)
+print("Hobbies:",hobbies)
+print("Pertenece al:", estacion_fav)
+print()
+print("--------------------------------------------------------------------")
+print("Gracias por compartir tus datos, espero que disfrutes de OurRed.")
+print()
+
+
+#continuaOno
+
+continuar = True
+
+while continuar == True:
+ while continuar:
+     # Solicitamos opción al usuario
+     que_hacer = str(input("¿Que deseas hacer? Puedes escribir (S), modificar datos (M) o salir (Salir)"))
+     if que_hacer == " S" or que_hacer == " s" or que_hacer == "":
+         mensaje = input("¿Qué piensas hoy? ")
+         print(nombre, "dice:", mensaje)
+     elif que_hacer == " M" or que_hacer == " m":
+        modificar_datos = str(input("Deseas modificar datos? S/N"))
+        if modificar_datos == " S" or modificar_datos == " s":
+            modificar_datos = str(input("¿Que deseas modificar?"))
+        if modificar_datos == " Nombre" or modificar_datos == " nombre":
+            nombre = str(input("¿Que nombre deseas utilizar?"))
+        elif modificar_datos == " Edad" or modificar_datos == " edad":
+            edad = str(input("¿Que edad tienes?"))
+        elif modificar_datos == " Nacionalidad" or modificar_datos == " nacionalidad":
+            nacionalidad = str(input("¿Cual es tu nacionalidad?"))
+        elif modificar_datos == " Residencia" or modificar_datos == " residencia":
+            residencia = str(input("¿Donde resides ahora?"))
+        elif modificar_datos == " Cantidad de amigos" or modificar_datos == " cantidad de amigos" or modificar_datos == " amigos" or modificar_datos == " Amigos":
+            amigos = str(input("¿Cuantos amigos tienes ahora?"))
+        elif modificar_datos == "Hobbies" or modificar_datos == "hobbies" or modificar_datos == "Hobbie" or modificar_datos == "hobbie":
+            hobbies = str(input("¿Tienes un nuevo Hobbie? Añadelos para relacionarte con mas usuarios"))
+     elif que_hacer == " Salir" or que_hacer == " salir":
+         print("Has decidido salir, hasta pronto!")
+         continuar = False
