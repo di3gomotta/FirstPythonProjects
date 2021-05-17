@@ -4,7 +4,7 @@ print("Bienvenido a OurRed")
 
 #Solicitud nombre#
 
-nombre = input("Para comenzar, conozcámonos un poco más, dime tu nombre")
+nombre = input("Para comenzar, conozcámonos un poco más, dime tu nombre!!!!")
 print()
 print("Hola,",nombre,",bienvenido a OurRed.")
 print()
