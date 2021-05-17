@@ -1,12 +1,16 @@
 # Presentacion
 print("Bienvenido a OurRed")
 
+
 # este es un comentario de prueba
 # otra linea
 # otra linea 
 
-#Solicitud nombre#
 
+#otro comentario
+
+#Solicitud nombre#
+#otra linea de prueba
 nombre = input("Para comenzar, conozcámonos un poco más, dime tu nombre!!!!")
 print()
 print("Hola,",nombre,",bienvenido a OurRed.")
